@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Landing Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    .top-section {
+      padding: 10px 0;
+      background-color:gold;
+      text-align: center;
+    }
+
+    .header {
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .header ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .header ul li {
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+    .header ul li a {
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .mobile-section {
+      padding: 50px 0;
+    }
+
+    .mobile-description {
+      text-align: left;
+      margin-bottom: 30px;
+    }
+
+    .mobile-description h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .mobile-image {
+      text-align: right;
+    }
+
+    .app-section {
+      background-color: gold;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    .app-section p {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .app-stores {
+      display: flex;
+      justify-content: center;
+    }
+
+    .app-stores img {
+      margin: 0 10px;
+    }
+    .bottom-section {
+      padding: 50px 0;
+      background-color: #ffffff;
+      text-align: center;
+    }
+
+    .phone-image {
+      max-width: 400px;
+      margin-right: 30px;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .feature {
+      text-align: left;
+    }
+
+    .feature h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .feature p {
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+    .apps-section {
+      background-color: gold;
+      padding: 10px 0;
+      text-align: center;
+    }
+    .apps-section p {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .apps-stores {
+      display: flex;
+      justify-content: center;
+    }
+
+    .apps-stores img {
+      margin: 0 10px;
+    }
+    .footer {
+      background-color: black;
+      padding: 20px;
+      color: #888888;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0;
+    }
+
+    .footer-links li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="top-section">
+    <div class="container">
+      <div class="header">
+        <h1>New Mobile Launch</h1>
+        <ul>
+          <li><a href="#purchase">Purchase</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mobile-description">
+          <h2>Pretty much everything you want in a new phone. <br>No.1 Selling Smartphone</h2>
+          <p>Less distractions. More soul.
+            Just pure instinct, formed as a machine. Told through beautiful symbols. Deeper interactions. And brave simplicity.
+            Phone (1) can bring us back. To us.</p>
+        </div>
+        <div class="col-lg-6 mobile-image">
+          <img src="mobile1.jpeg" width="300" alt="Mobile Image">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="app-section">
+    <div class="container">
+      <h2>Download our VR store app to experience the phone.</h2> 
+      <p>Our store's official app is avaliable on any mobile device! Download now to get started!</p>
+      <div class="app-stores">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"height="40"  alt="Google Play Store">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Apple App Store">
+      </div>
+    </div>
+  </div>
+  <div class="bottom-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="phone-image" src="phone2.jpg"width="400" height="200" alt="Phone Image">
+        </div>
+        <div class="col-md-8">
+          <div class="features-grid">
+            <div class="feature">
+             <center><i class="fa-sharp fa-solid fa-camera fa-2xl"></i></center> 
+              <br><h3>Best in Class Camera</h3>
+              <p>Dual-camera configuration has two superior 50 MP sensors for outstanding authenticity.</p>
+            </div>
+            <div class="feature">
+              <center><i class="fa-sharp fa-solid fa-microchip fa-2xl"></i></center>
+              <br><h3>Latest Processor</h3>
+              <p>This phone's Qualcomm Snapdragon 778G+ processor 
+                provides uninterrupted operation and engaging gaming.</p>
+            </div>
+            <div class="feature">
+              <center><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+              </svg></center>
+              <br><h3>Stunning Display</h3>
+              <p>1 billion colours. Every hue, powerfully true-to-life. 6.55” OLED display.
+                 HDR10+. </p>
+            </div>
+            <div class="feature">
+              <center><i class="fa-solid fa-battery-full fa-2xl"></i></center>
+              <br><h3>Fast Charge</h3>
+              <p>15 W wireless charging and dual charging support.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="apps-section">
+    <div class="container">
+      <h2>Follow us on</h2> 
+      <div class="apps-stores">
+
+        <i class="fa-brands fa-twitter"></i>&emsp;
+        <i class="fa-brands fa-facebook"></i>&emsp;
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; Your Website 2022. All Rights Reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

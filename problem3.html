@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .product-image {
+      flex: 1;
+      margin-right: 20px;
+    }
+
+    .product-description {
+      flex: 1;
+    }
+
+    .product-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .category{
+        color: #616161;
+        margin-bottom: 50px;
+
+
+    }
+    .product-rating {
+        color: black;
+      margin-bottom: 10px;
+    }
+
+    .product-price {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .product-original-price {
+      color: #818080;
+      text-decoration: line-through;
+      margin-right: 10px;
+    }
+    .offer{
+        color: #4CAF50;
+        font-weight: bold;
+      margin-bottom: 10px;
+
+    }
+
+    .product-details {
+      margin-bottom: 20px;
+    }
+
+    
+
+    .product-description-text {
+      margin-bottom: 10px;
+    }
+
+    .product-color {
+      margin-bottom: 5px;
+    }
+
+    .product-availability {
+      margin-bottom: 5%;
+    }
+    .product-size {
+      margin-bottom: 10px;
+    }
+
+    .size-option {
+      display: inline-block;
+      position: relative;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .size-option input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    .size-option label {
+      display: inline-block;
+      padding: 8px 15px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+
+    .size-option input:checked + label {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+
+    .product-quantity {
+      margin-bottom: 5%;
+    }
+
+    .product-buttons {
+      display: flex;
+    }
+
+    .product-button {
+      display:block;
+      background-color:whitesmoke;
+      color: black;
+      text-align: center;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 16px;
+      transition: background-color 0.3s;
+      margin-right: 10px;
+    }
+
+    .product-button:hover {
+      background-color:blue;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="product-image">
+      <img src="shirt.jpg" alt="Shirt Image">
+    </div>
+    <div class="product-description">
+      <div class="product-details">
+        <h1 class="product-title">Black Cotton T-Shirt</h1>
+        <span class="category">shirts</span>
+        <div class="product-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half"></i>
+            
+          </div>
+        <div class="product-price">
+          
+          <span class="product-offer-price">Rs. 250</span>
+          <span class="product-original-price">Rs. 500</span>
+          <span class="offer">50%  Off</span>
+        </div>
+        
+      </div>
+
+      <p class="product-description-text">This Black cotton T-shirt is perfect for casual wear. It offers a comfortable fit and is made from high-quality fabric.</p>
+      <p class="product-color"><b>Color:</b> &emsp;Black</p>
+      <p class="product-availability"><b>Availability:</b> &emsp; 3 in stock</p>
+      <div class="product-size">
+       <b>Select size: &emsp;</b> 
+        <span class="size-option">
+          <input type="checkbox" id="small" name="size" value="small">
+          <label for="small">Small</label>
+        </span>
+        <span class="size-option">
+          <input type="checkbox" id="medium" name="size" value="medium">
+          <label for="medium">Medium</label>
+        </span>
+        <span class="size-option">
+          <input type="checkbox" id="large" name="size" value="large">
+          <label for="large">Large</label>
+        </span>
+      </div>
+      
+      <div class="product-quantity">
+        Quantity:
+        <select>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+      <div class="product-buttons">
+        <a class="product-button" href="#">Buy Now</a>
+        <a class="product-button" href="#">Add to Cart</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
